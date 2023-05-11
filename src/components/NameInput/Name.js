@@ -43,9 +43,11 @@ const Name = props => {
       number: number,
     });
 
-    setId('');
     setName('');
     setNumber('');
+    setId('');
+
+    event.target.reset(); // reset the form
   };
 
   return (
