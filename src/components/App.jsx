@@ -7,8 +7,9 @@ import FilterInput from './FilterInput';
 import css from './App.module.css';
 
 const App = () => {
-  const [contacts, setContacts] = useState([]);
-  // const [name, setName] = useState('');
+  const [contacts, setContacts] =useState(() => 
+          JSON.parse(window.localStorage.getItem("contacts")) ?? ''    
+  );
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
