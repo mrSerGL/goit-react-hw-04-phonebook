@@ -1,0 +1,21 @@
+.section {
+
+    width: 304px;
+    margin: 0px auto 16px auto;
+    border-radius: 4px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
+    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+  }
+
+  .sectionContacts {
+
+    width: 304px;
+    margin: 0px auto 16px auto;
+    border-radius: 4px;
+
+  }
+  
+  .sectionTitle {
+    text-align: center;
+    margin: 0px 0px 8px 0px;
+  }
