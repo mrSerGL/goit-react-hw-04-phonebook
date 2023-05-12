@@ -7,10 +7,10 @@ import FilterInput from './FilterInput';
 import css from './App.module.css';
 
 const App = () => {
-  const [contacts, setContacts] =useState(() => 
-          JSON.parse(window.localStorage.getItem("contacts")) ?? ''    
-  );
   const [filter, setFilter] = useState('');
+  const [contacts, setContacts] = useState(
+    () => JSON.parse(window.localStorage.getItem('contacts')) ?? ''
+  );
 
   useEffect(() => {
     const contacts = window.localStorage.getItem('contacts');
